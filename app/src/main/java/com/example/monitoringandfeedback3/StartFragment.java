@@ -25,7 +25,11 @@ public class StartFragment extends Fragment {
         view.findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                controller.navigate(R.id.action_startFragment_to_secondFragment);
+                controller.navigate(
+                        StartFragmentDirections
+                                .actionStartFragmentToSecondFragment()
+                                .setDisplayString("Fooo")
+                );
             }
         });
     }

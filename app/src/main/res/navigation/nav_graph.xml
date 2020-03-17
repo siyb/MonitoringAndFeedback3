@@ -17,5 +17,10 @@
         tools:layout="@layout/fragment_second"
         android:id="@+id/secondFragment"
         android:name="com.example.monitoringandfeedback3.SecondFragment"
-        android:label="SecondFragment" />
+        android:label="SecondFragment">
+        <argument
+            android:name="displayString"
+            android:defaultValue="Default"
+            app:argType="string" />
+    </fragment>
 </navigation>
